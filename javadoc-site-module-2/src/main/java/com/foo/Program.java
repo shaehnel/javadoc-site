@@ -2,7 +2,7 @@ package com.foo;
 
 /**
  * the program
- * {@see Service}
+ * {@link Service}
  */
 public class Program {
     Service service = new Service();
