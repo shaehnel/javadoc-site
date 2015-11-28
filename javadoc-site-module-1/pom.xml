@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.foo</groupId>
         <artifactId>javadoc-site</artifactId>
-        <version>1.0</version>
+        <version>1.1-SNAPSHOT</version>
     </parent>
     <artifactId>javadoc-site-module-1</artifactId>
     <name>Module 1</name>
