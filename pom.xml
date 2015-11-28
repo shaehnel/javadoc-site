@@ -4,7 +4,7 @@
 
     <groupId>com.foo</groupId>
     <artifactId>javadoc-site</artifactId>
-    <version>1.5</version>
+    <version>1.6-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Build</name>
 
@@ -16,7 +16,7 @@
     <scm>
         <url>https://github.com/shaehnel/javadoc-site.git</url>
         <developerConnection>scm:git:https://github.com/shaehnel/javadoc-site</developerConnection>
-      <tag>javadoc-site-1.5</tag>
+      <tag>javadoc-site-1.3</tag>
   </scm>
     <distributionManagement>
         <repository>
