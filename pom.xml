@@ -16,6 +16,7 @@
     </modules>
 
     <scm>
+        <url>https://github.com/shaehnel/javadoc-site.git</url>
         <developerConnection>https://github.com/shaehnel/javadoc-site</developerConnection>
     </scm>
     <distributionManagement>
