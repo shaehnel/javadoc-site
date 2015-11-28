@@ -4,7 +4,7 @@
 
     <groupId>com.foo</groupId>
     <artifactId>javadoc-site</artifactId>
-    <version>1.3</version>
+    <version>1.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Build</name>
 
@@ -16,7 +16,7 @@
     <scm>
         <url>https://github.com/shaehnel/javadoc-site.git</url>
         <developerConnection>scm:git:https://github.com/shaehnel/javadoc-site</developerConnection>
-      <tag>javadoc-site-1.3</tag>
+      <tag>HEAD</tag>
   </scm>
     <distributionManagement>
         <repository>
@@ -80,11 +80,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.10.3</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.6</version>
                 </plugin>
             </plugins>
         </pluginManagement>
