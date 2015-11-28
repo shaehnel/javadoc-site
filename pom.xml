@@ -19,6 +19,14 @@
       <tag>HEAD</tag>
   </scm>
     <distributionManagement>
+        <repository>
+            <id>local</id>
+            <url>file://${project.baseUri}/target/deploy/release</url>
+        </repository>
+        <snapshotRepository>
+            <id>local</id>
+            <url>file://${project.baseUri}/target/deploy/snapshot</url>
+        </snapshotRepository>
         <site>
             <id>local</id>
             <url>file://${project.baseUri}/target/site-deploy</url>
