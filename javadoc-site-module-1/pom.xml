@@ -10,4 +10,12 @@
     <artifactId>javadoc-site-module-1</artifactId>
     <name>Module 1</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
 </project>
