@@ -10,5 +10,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>javadoc-site-module-1</artifactId>
-    
+    <name>Module 1</name>
+
 </project>

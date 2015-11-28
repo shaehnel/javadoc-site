@@ -10,6 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>javadoc-site-module-2</artifactId>
+    <name>Module 2</name>
 
     <dependencies>
         <dependency>

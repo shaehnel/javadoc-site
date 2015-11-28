@@ -8,11 +8,22 @@
     <artifactId>javadoc-site</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <name>Build</name>
 
     <modules>
         <module>javadoc-site-module-1</module>
         <module>javadoc-site-module-2</module>
     </modules>
+
+    <scm>
+        <developerConnection>https://github.com/shaehnel/javadoc-site</developerConnection>
+    </scm>
+    <distributionManagement>
+        <site>
+            <id>local</id>
+            <url>file://${project.baseUri}/target/site-deploy</url>
+        </site>
+    </distributionManagement>
 
     <dependencyManagement>
         <dependencies>
@@ -28,4 +39,43 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.3</version>
+                    <configuration>
+                        <providerImplementation>jgin</providerImplementation>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>org.apache.maven.scm</groupId>
+                            <artifactId>maven-scm-provider-jgit</artifactId>
+                            <version>1.9.4</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.4</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>2.10.3</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
